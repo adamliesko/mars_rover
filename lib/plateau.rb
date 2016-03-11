@@ -1,4 +1,3 @@
-require 'enumerator'
 require File.expand_path('../rover', __FILE__)
 
 class Plateau

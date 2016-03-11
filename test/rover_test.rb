@@ -3,7 +3,6 @@ require 'minitest/autorun'
 require File.expand_path('../../lib/plateau', __FILE__)
 require File.expand_path('../../lib/rover', __FILE__)
 
-require 'pry'
 class RoverTest < Minitest::Test
   def setup
     @plateau = Plateau.new "5 5\n1 2 N LMLMLMLMM 3 3 E MMRMMRMRRM"

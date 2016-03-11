@@ -1,4 +1,41 @@
-# Problem Objective
+# Mars rovers
+Matt Damon and his rovers on Mars.
+
+## Usage
+
+```
+Usage:
+    mars_rover.rb [OPTIONS]
+
+Options:
+    --file_name PATH_TO_FILE      path to input file for rovers and plateau definitions (prioritized)
+    --direct_input INPUT_STRING   input for rovers and plateau definitions
+    -h, --help                    print help
+```
+
+### Example usage
+Input is read from a file.
+
+`ruby mars_rover.rb --file_name 'input.txt'`
+
+Input is read directly as an argument.
+
+`ruby mars_rover.rb --direct_input "5 5 1 2 N LMLMLMLMM 3 3 E MMRMMRMRRM" `
+
+### Output
+
+```
+1 3 N
+5 1 E
+```
+
+
+## Assumptions
+
+- rovers can't go outside of the plateau
+- two rovers can share a [x,y] position
+
+## Problem Objective
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. 
 
@@ -29,19 +66,14 @@ INPUT AND OUTPUT
 Test Input:
 ```
 5 5
-
 1 2 N
-
 LMLMLMLMM
-
 3 3 E
-
 MMRMMRMRRM
 ```
 
 Expected Output:
 ```
 1 3 N
-
 5 1 E
 ```

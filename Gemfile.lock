@@ -1,0 +1,12 @@
+GEM
+  specs:
+    clamp (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  clamp (= 1.0.0)
+
+BUNDLED WITH
+   1.11.2
